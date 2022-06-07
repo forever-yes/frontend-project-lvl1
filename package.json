@@ -1,6 +1,6 @@
 {
   "name": "@hexlet/code",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "frontend-project-lvl1",
   "main": "index.js",
   "bin": {
