@@ -1,3 +1,3 @@
-import readlineSync from "readline-sync";
+import readlineSync from 'readline-sync';
 
-export default () => readlineSync.question("Enter your name, please: ");
+export default () => readlineSync.question('Enter your name, please: ');
