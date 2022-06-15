@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
-import readlineSync from 'readline-sync';
 import rng from '../src/rng.js';
 import greeting from '../src/cli.js';
+import dialog from '../src/dialog.js';
 
 const brainEven = () => {
   const answers = ['yes', 'no'];
@@ -12,13 +12,8 @@ const brainEven = () => {
 
   for (let i = 0; i < 3; i += 1) {
     const num = rng();
-    console.log(`Question: ${num}`);
-    const userAnswer = readlineSync.question('Your answer: ');
-    if (num % 2 === answers.indexOf(userAnswer)) {
-      console.log('Correct!');
-    } else {
-      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${answers[num % 2]}'`);
-      console.log(`Let's try again, ${name}`);
+    const answer = answers[num % 2];
+    if (!dialog(num, answer, name)) {
       return;
     }
   }
@@ -26,5 +21,3 @@ const brainEven = () => {
 };
 
 brainEven();
-
-export default brainEven;
