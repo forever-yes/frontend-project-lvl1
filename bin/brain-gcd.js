@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import greeting from '../src/cli.js';
 import dialog from '../src/dialog.js';
 import rng from '../src/rng.js';
