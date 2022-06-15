@@ -14,6 +14,7 @@ const getGcd = (a, b) => {
 
 const gcd = () => {
   const name = greeting();
+  console.log('Find the greatest common divisor of given numbers.');
 
   for (let i = 0; i < 3; i += 1) {
     const nums = [rng(), rng()];
