@@ -10,8 +10,10 @@ make install
 
 ## Demonstration
 ### Setup
-[![asciicast](https://asciinema.org/a/501710.svg)](https://asciinema.org/a/501710)
+[![asciicast](https://asciinema.org/a/sajk87CyFVD3JaGrj1sSTlDOs.svg)](https://asciinema.org/a/sajk87CyFVD3JaGrj1sSTlDOs)
 
 ### brain-even
+[![asciicast](https://asciinema.org/a/KL9Q8cdUmUIvIicJERmAgHxoQ.svg)](https://asciinema.org/a/KL9Q8cdUmUIvIicJERmAgHxoQ)
 
 ### brain-calc
+[![asciicast](https://asciinema.org/a/U2DSX2eIuyDQvDFFx682RDjE4.svg)](https://asciinema.org/a/U2DSX2eIuyDQvDFFx682RDjE4)
