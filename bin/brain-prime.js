@@ -15,7 +15,7 @@ const isPrime = (num) => {
     }
   }
   return true;
-}
+};
 
 const prime = () => {
   const name = greeting();
