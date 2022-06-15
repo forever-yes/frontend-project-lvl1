@@ -23,3 +23,7 @@ make install
 
 ### brain-progression
 [![asciicast](https://asciinema.org/a/UTBt47vR73w7fHAGP96PPv2tc.svg)](https://asciinema.org/a/UTBt47vR73w7fHAGP96PPv2tc)
+
+### brain-prime
+
+[![asciicast](https://asciinema.org/a/hlWTGDDgzamd0Pqg41IwSR4xt.svg)](https://asciinema.org/a/hlWTGDDgzamd0Pqg41IwSR4xt)
