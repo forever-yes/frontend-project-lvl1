@@ -19,7 +19,7 @@ make install
 [![asciicast](https://asciinema.org/a/U2DSX2eIuyDQvDFFx682RDjE4.svg)](https://asciinema.org/a/U2DSX2eIuyDQvDFFx682RDjE4)
 
 ### brain-gcd
-[![asciicast](https://asciinema.org/a/FwTiRwJ6yZBecJGkrroiG3dF4.svg)](https://asciinema.org/a/FwTiRwJ6yZBecJGkrroiG3dF4)
+[![asciicast](https://asciinema.org/a/kER6vCgosqwyDecZ0B1cvnyc9.svg)](https://asciinema.org/a/kER6vCgosqwyDecZ0B1cvnyc9)
 
 ### brain-progression
 [![asciicast](https://asciinema.org/a/UTBt47vR73w7fHAGP96PPv2tc.svg)](https://asciinema.org/a/UTBt47vR73w7fHAGP96PPv2tc)
