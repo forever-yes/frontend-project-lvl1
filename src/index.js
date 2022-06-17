@@ -1,12 +1,14 @@
 import readlineSync from 'readline-sync';
 import greeting from './cli.js';
 
-const play = (game, message) => {
+const play = (game) => {
+  const [message] = game();
   const name = greeting();
   console.log(message);
+  const attempts = 3;
 
-  for (let i = 0; i < 3; i += 1) {
-    const [question, answer] = game();
+  for (let i = 0; i < attempts; i += 1) {
+    const [question, answer] = game().slice(1);
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
     if (userAnswer === answer) {
