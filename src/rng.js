@@ -1,1 +1,3 @@
-export default () => Math.floor(Math.random() * 100);
+const randomNumberGenerator = (a = 100, b = 0) => Math.floor(Math.random() * a + b);
+
+export default randomNumberGenerator;
