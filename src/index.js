@@ -1,7 +1,34 @@
 import readlineSync from 'readline-sync';
-import greeting from './cli.js';
 
-const play = (game) => {
+import greeting from './cli.js';
+import startCalcGame from './games/calc.js';
+import startEvenGame from './games/even.js';
+import startGcdGame from './games/gcd.js';
+import startPrimeGame from './games/prime.js';
+import startProgressionGame from './games/progression.js';
+
+const play = (gameName) => {
+  let game = () => {};
+  switch (gameName) {
+    case ('brain-calc'):
+      game = startCalcGame;
+      break;
+    case ('brain-even'):
+      game = startEvenGame;
+      break;
+    case ('brain-gcd'):
+      game = startGcdGame;
+      break;
+    case ('brain-prime'):
+      game = startPrimeGame;
+      break;
+    case ('brain-progression'):
+      game = startProgressionGame;
+      break;
+    default:
+      console.log('wtf?');
+  }
+
   const [message] = game();
   const name = greeting();
   console.log(message);
