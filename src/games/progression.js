@@ -1,11 +1,11 @@
-import rng from '../rng.js';
+import randomNumberGenerator from '../random-number-generator.js';
 
 const startProgressionGame = () => {
   const message = 'What number is missing in the progression?';
-  const progressionLength = rng(10, 5);
-  const progressionStep = rng(10);
-  const hiddenNumber = rng(progressionLength);
-  const firstNumber = rng();
+  const progressionLength = randomNumberGenerator(10, 5);
+  const progressionStep = randomNumberGenerator(10);
+  const hiddenNumber = randomNumberGenerator(progressionLength);
+  const firstNumber = randomNumberGenerator();
 
   const listOfNumbers = [];
   let answer = 0;

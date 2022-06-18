@@ -1,4 +1,4 @@
-import rng from '../rng.js';
+import randomNumberGenerator from '../random-number-generator.js';
 
 const isPrime = (num) => {
   if (num <= 1) {
@@ -15,7 +15,7 @@ const isPrime = (num) => {
 
 const startPrimeGame = () => {
   const message = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-  const num = rng();
+  const num = randomNumberGenerator();
   const answer = isPrime(num) ? 'yes' : 'no';
   return [message, num, answer];
 };

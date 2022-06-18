@@ -1,11 +1,11 @@
-import rng from '../rng.js';
+import randomNumberGenerator from '../random-number-generator.js';
 
 const startCalcGame = () => {
   const message = 'What is the result of the expression?';
+
   const operands = ['+', '-', '*'];
-  const numbers = [rng(), rng(10)];
-  const operand = operands[rng() % 3];
-  const question = numbers.join(` ${operand} `);
+  const numbers = [randomNumberGenerator(), randomNumberGenerator(10)];
+  const operand = operands[randomNumberGenerator() % 3];
   let answer = 0;
 
   switch (operand) {
@@ -22,7 +22,7 @@ const startCalcGame = () => {
       console.log('wtf?');
   }
 
-  return [message, question, answer];
+  return [message, numbers.join(` ${operand} `), answer];
 };
 
 export default startCalcGame;

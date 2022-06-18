@@ -1,4 +1,4 @@
-import rng from '../rng.js';
+import randomNumberGenerator from '../random-number-generator.js';
 
 const getGcd = (a, b) => {
   if (!b) {
@@ -10,7 +10,7 @@ const getGcd = (a, b) => {
 
 const startGcdGame = () => {
   const message = 'Find the greatest common divisor of given numbers.';
-  const nums = [rng(), rng()];
+  const nums = [randomNumberGenerator(), randomNumberGenerator()];
   const answer = getGcd(nums[0], nums[1]);
 
   return [message, nums.join(' '), String(answer)];
