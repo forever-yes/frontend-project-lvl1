@@ -1,7 +1,7 @@
-import randomNumberGenerator from '../random-number-generator.js';
+import randomNumberGenerator from '../randomNumberGenerator.js';
+import play from '../index.js';
 
-const startProgressionGame = () => {
-  const message = 'What number is missing in the progression?';
+const dataGenerator = () => {
   const progressionLength = randomNumberGenerator(10, 5);
   const progressionStep = randomNumberGenerator(10);
   const hiddenNumber = randomNumberGenerator(progressionLength);
@@ -18,7 +18,14 @@ const startProgressionGame = () => {
       listOfNumbers.push((progressionStep * i) + firstNumber);
     }
   }
-  return [message, listOfNumbers.join(' '), String(answer)];
+  return [listOfNumbers.join(' '), answer];
+};
+
+const startProgressionGame = () => {
+  const gameRule = 'What number is missing in the progression?';
+  const game = dataGenerator;
+
+  return play(game, gameRule);
 };
 
 export default startProgressionGame;

@@ -1,4 +1,5 @@
-import randomNumberGenerator from '../random-number-generator.js';
+import randomNumberGenerator from '../randomNumberGenerator.js';
+import play from '../index.js';
 
 const getGcd = (a, b) => {
   if (!b) {
@@ -8,12 +9,17 @@ const getGcd = (a, b) => {
   return getGcd(b, a % b);
 };
 
-const startGcdGame = () => {
-  const message = 'Find the greatest common divisor of given numbers.';
-  const nums = [randomNumberGenerator(), randomNumberGenerator()];
-  const answer = getGcd(nums[0], nums[1]);
+const dataGenerator = () => {
+  const question = [randomNumberGenerator(), randomNumberGenerator()];
+  const answer = getGcd(question[0], question[1]);
 
-  return [message, nums.join(' '), String(answer)];
+  return [question.join(' '), answer];
+};
+
+const startGcdGame = () => {
+  const gameRule = 'Find the greatest common divisor of given numbers.';
+  const game = dataGenerator;
+  return play(game, gameRule);
 };
 
 export default startGcdGame;

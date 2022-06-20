@@ -1,10 +1,18 @@
-import randomNumberGenerator from '../random-number-generator.js';
+import randomNumberGenerator from '../randomNumberGenerator.js';
+import play from '../index.js';
+
+const dataGenerator = () => {
+  const question = randomNumberGenerator();
+  const answer = (question % 2) === 0 ? 'yes' : 'no';
+
+  return [question, answer];
+};
 
 const startEvenGame = () => {
-  const message = 'Answer "yes" if the number is even, otherwise answer "no".';
-  const num = randomNumberGenerator();
-  const answer = (num % 2) === 0 ? 'yes' : 'no';
-  return [message, num, answer];
+  const gameRule = 'Answer "yes" if the number is even, otherwise answer "no".';
+  const game = dataGenerator;
+
+  return play(game, gameRule);
 };
 
 export default startEvenGame;
