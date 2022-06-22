@@ -10,9 +10,8 @@ const dataGenerator = () => {
 
 const startEvenGame = () => {
   const gameRule = 'Answer "yes" if the number is even, otherwise answer "no".';
-  const game = dataGenerator;
 
-  return play(game, gameRule);
+  return play(dataGenerator, gameRule);
 };
 
 export default startEvenGame;

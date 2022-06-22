@@ -23,9 +23,8 @@ const dataGenerator = () => {
 
 const startPrimeGame = () => {
   const gameRule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-  const game = dataGenerator;
 
-  return play(game, gameRule);
+  return play(dataGenerator, gameRule);
 };
 
 export default startPrimeGame;

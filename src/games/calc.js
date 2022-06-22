@@ -18,7 +18,7 @@ const dataGenerator = () => {
       answer = question[0] * question[1];
       break;
     default:
-      console.log('wtf?');
+      return (console.error('something wrond with switch construction'));
   }
 
   return [question.join(` ${operand} `), answer];
@@ -26,9 +26,8 @@ const dataGenerator = () => {
 
 const startCalcGame = () => {
   const gameRule = 'What is the result of the expression?';
-  const game = dataGenerator;
 
-  return play(game, gameRule);
+  return play(dataGenerator, gameRule);
 };
 
 export default startCalcGame;

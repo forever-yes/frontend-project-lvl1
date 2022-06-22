@@ -18,8 +18,8 @@ const dataGenerator = () => {
 
 const startGcdGame = () => {
   const gameRule = 'Find the greatest common divisor of given numbers.';
-  const game = dataGenerator;
-  return play(game, gameRule);
+
+  return play(dataGenerator, gameRule);
 };
 
 export default startGcdGame;

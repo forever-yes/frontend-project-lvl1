@@ -23,9 +23,8 @@ const dataGenerator = () => {
 
 const startProgressionGame = () => {
   const gameRule = 'What number is missing in the progression?';
-  const game = dataGenerator;
 
-  return play(game, gameRule);
+  return play(dataGenerator, gameRule);
 };
 
 export default startProgressionGame;
