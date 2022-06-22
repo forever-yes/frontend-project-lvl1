@@ -2,10 +2,11 @@ import readlineSync from 'readline-sync';
 
 import greeting from './cli.js';
 
-const play = (game, gameRule, attempts = 3) => {
+const play = (game, gameRule, questions = 3) => {
   const name = greeting(gameRule);
+  console.log(gameRule);
 
-  for (let i = 0; i < attempts; i += 1) {
+  for (let i = 0; i < questions; i += 1) {
     const [question, answer] = game();
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
