@@ -2,8 +2,9 @@ import readlineSync from 'readline-sync';
 
 import greeting from './cli.js';
 
-const play = (game, gameRule, defaultQuestions = 3) => {
-  const questions = defaultQuestions;
+const defaultQuestions = 3;
+
+const play = (game, gameRule, questions = defaultQuestions) => {
   const name = greeting(gameRule);
   console.log(gameRule);
 
